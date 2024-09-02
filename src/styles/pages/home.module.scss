@@ -1,8 +1,63 @@
 @import "../variables.module";
 
 .hero {
-    color: $color-primary;
-    background-color: $color-secondary;
-    height: 100vh;
-    width: 100%;
+  background-color: $color-primary-1000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  //   justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  .display {
+    // margin-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: $text-size-7xl-mobile;
+    @media (min-width: $large-screen) {
+      font-size: $text-size-7xl;
+    }
+  }
+
+  .infoBlock {
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .lead {
+      align-self: start;
+      font-size: $text-size-2xl-mobile;
+      color: $color-base-white;
+      font-weight: 700;
+      @media (min-width: $large-screen) {
+        font-size: $text-size-2xl;
+      }
+    }
+    .separator {
+      align-self: flex-start;
+      width: 100px;
+      height: 10px;
+      background: $color-secondary;
+    }
+
+    a {
+      align-self: start;
+      color: $color-secondary;
+      font-size: $text-size-md-mobile;
+      text-decoration: none;
+      @media (min-width: $large-screen) {
+        font-size: $text-size-md;
+      }
+    }
+
+    .containerIcon {
+      align-self: start;
+      display: flex;
+      gap: 20px;
+    }
+  }
 }
