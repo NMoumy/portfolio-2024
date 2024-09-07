@@ -20,44 +20,51 @@
     }
   }
 
-  .infoBlock {
-    display: flex;
-    width: 50%;
-    align-self: flex-end;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-    .lead {
-      align-self: start;
-      font-size: $text-size-2xl-mobile;
-      color: $color-base-white;
-      font-weight: 700;
-      @media (min-width: $large-screen) {
-        font-size: $text-size-2xl;
-      }
-    }
-    .separator {
-      align-self: flex-start;
-      width: 100px;
-      height: 10px;
-      background: $color-secondary;
+  div {
+    image {
+      width: 100%;
+      height: 100%;
     }
 
-    a {
-      align-self: start;
-      color: $color-secondary;
-      font-size: $text-size-md-mobile;
-      text-decoration: none;
-      @media (min-width: $large-screen) {
-        font-size: $text-size-md;
-      }
-    }
-
-    .containerIcon {
-      align-self: start;
+    .infoBlock {
       display: flex;
-      gap: 20px;
+      width: 50%;
+      align-self: flex-end;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .lead {
+        align-self: start;
+        font-size: $text-size-2xl-mobile;
+        color: $color-base-white;
+        font-weight: 700;
+        @media (min-width: $large-screen) {
+          font-size: $text-size-2xl;
+        }
+      }
+      .separator {
+        align-self: flex-start;
+        width: 100px;
+        height: 10px;
+        background: $color-secondary;
+      }
+
+      a {
+        align-self: start;
+        color: $color-secondary;
+        font-size: $text-size-md-mobile;
+        text-decoration: none;
+        @media (min-width: $large-screen) {
+          font-size: $text-size-md;
+        }
+      }
+
+      .containerIcon {
+        align-self: start;
+        display: flex;
+        gap: 20px;
+      }
     }
   }
 }
